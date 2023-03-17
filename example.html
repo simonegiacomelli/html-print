@@ -1,0 +1,78 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+    <meta name="generator" content="PSPad editor, www.pspad.com">
+    <style type="text/css">
+        .pippo {
+            page-break-before: auto;
+        }
+
+        body {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding: 0;
+            color: black;
+            font-size: 10pt;
+            font-family: "Trebuchet MS", sans-serif;
+            background-color: #E2E2E2;
+        }
+
+        div.mainContainer {
+            height: auto;
+            width: 68em;
+            background-color: #FFFFFF;
+            margin: 0 auto;
+            padding: 0;
+        }
+    </style>
+    <script type="text/javascript">
+
+        //alert(jsPrintSetup.getPrintersList());
+        testprint = function () {
+            // set portrait orientation
+
+            jsPrintSetup.setOption('orientation', jsPrintSetup.kLandscapeOrientation);
+            // set top margins in millimeters
+            jsPrintSetup.setOption('marginTop', 35);
+            jsPrintSetup.setOption('marginBottom', 15);
+            jsPrintSetup.setOption('marginLeft', 20);
+            jsPrintSetup.setOption('marginRight', 10);
+            // set page header
+            jsPrintSetup.setOption('headerStrLeft', '');
+            jsPrintSetup.setOption('headerStrCenter', '');
+            jsPrintSetup.setOption('headerStrRight', '');
+            // set empty page footer
+            jsPrintSetup.setOption('footerStrLeft', '');
+            jsPrintSetup.setOption('footerStrCenter', '');
+            jsPrintSetup.setOption('footerStrRight', '');
+            // clears user preferences always silent print value
+            // to enable using 'printSilent' option
+            jsPrintSetup.clearSilentPrint();
+            // Suppress print dialog (for this context only)
+            //jsPrintSetup.setPrinter('Microsoft XPS Document Writer');
+            jsPrintSetup.setOption('printSilent', 1);
+            // Do Print
+            // When print is submitted it is executed asynchronous and
+            // script flow continues after print independently of completetion of print process!
+            jsPrintSetup.print();
+            // next commands
+        }
+
+    </script>
+    <title>ddd</title>
+</head>
+<body><h1>PAGINA1</h1>
+CIAO1
+<h1 style=" page-break-before: always;">PAGINA2</h1>
+CIAO2
+<h1 style=" page-break-before: always;">PAGINA3</h1>
+CIAO3
+</body>
+
+<script type="text/javascript">
+    testprint();
+</script>
+
+</html>
